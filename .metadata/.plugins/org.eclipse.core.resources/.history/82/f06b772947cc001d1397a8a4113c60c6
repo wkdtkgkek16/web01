@@ -1,0 +1,30 @@
+package model;
+
+import java.util.ArrayList;
+
+import java.sql.*;
+
+public class PostDAO {
+	//게시글목록
+	public ArrayList<PostsVO> list(){
+		ArrayList<PostsVO> array=new ArrayList<PostsVO>();
+		try {
+			String sql="select * from posts order by id desc limit 0,5";
+			PreparedStatement ps=DB.CON.prepareStatement(sql);
+			ResultSet rs=ps.executeQuery();
+			while(rs.next()) {
+				PostsVO vo=new PostsVO();
+				vo.setId(rs.getInt("id"));
+				vo.setTitle(rs.getString("title"));
+				vo.setBody(rs.getString("body"));
+				vo.setWriter(rs.getString("writer"));
+				vo.setDate(rs.getDate("date"));
+				array.add(vo);
+				System.out.println(vo.toString());
+			}
+		}catch(Exception e) {
+			System.out.println("post list..."+e.toString());
+		}
+		return array;
+	}
+}

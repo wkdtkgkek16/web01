@@ -1,0 +1,13 @@
+package model;
+
+import java.util.ArrayList;
+
+public class UserDAO {
+	//사용자목록
+	public ArrayList<UserVO> list(){
+		ArrayList<UserVO> array=new ArrayList<UserVO>();
+		
+		return array;
+		
+	}
+}

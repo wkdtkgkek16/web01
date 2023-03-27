@@ -1,0 +1,12 @@
+package model;
+
+import java.util.ArrayList;
+
+public class PostDAO {
+	//게시글목록
+	public ArrayList<PostVO> list(){
+		ArrayList<PostVO> array=new ArrayList<PostVO>();
+		
+		return array;
+	}
+}

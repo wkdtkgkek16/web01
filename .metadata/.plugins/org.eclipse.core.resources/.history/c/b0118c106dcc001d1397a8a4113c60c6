@@ -1,0 +1,16 @@
+package model;
+
+import java.util.ArrayList;
+
+public class UserDAO {
+	//사용자목록
+	public ArrayList<UserVO> list(){
+		ArrayList<UserVO> array=new ArrayList<UserVO>();
+		try {
+			String sql="select * from users order by join_date desc";
+		}catch(Exception e) {
+			System.out.println("사용자목록:"+e.toString());
+		}
+		return array;
+	}
+}

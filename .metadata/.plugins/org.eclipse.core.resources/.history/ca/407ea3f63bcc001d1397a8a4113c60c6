@@ -1,0 +1,9 @@
+@charset "UTF-8";
+<style>
+	.div_menu a{
+		color: gray;
+		font_size: 2.5rem;
+		text-decoration: none;
+		padding-right: 30px;
+	}
+</style>

@@ -1,0 +1,26 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+	<style>
+		.div_menu a{
+			color: gray;
+			text-decoration: none;
+			padding-right: 30px;
+			font-size: 2rem;
+		}
+	</style>
+</head>
+<body>
+	<div class="div_menu">
+		<a href="/">home</a>
+		<a href="/posts">posts</a>
+		<a href="/login">login</a>
+	</div>
+	<hr/>
+	<jsp:include page="${pageName}"></jsp:include>
+</body>
+</html>

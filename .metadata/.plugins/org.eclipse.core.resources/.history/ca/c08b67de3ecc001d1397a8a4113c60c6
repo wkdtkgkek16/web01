@@ -1,0 +1,9 @@
+package model;
+
+public class PostsVO {
+	private int id;
+	private String title;
+	private String body;
+	private String writer;
+	private Date date;
+}

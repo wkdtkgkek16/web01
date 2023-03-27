@@ -1,0 +1,16 @@
+package model;
+
+import java.util.ArrayList;
+
+public class PostDAO {
+	//게시글목록
+	public ArrayList<PostVO> list(){
+		ArrayList<PostVO> array=new ArrayList<PostVO>();
+		try {
+			String sql="select * from posts limit 0,5";
+		}catch(Exception e) {
+			System.out.println("post list..."+e.toString());
+		}
+		return array;
+	}
+}

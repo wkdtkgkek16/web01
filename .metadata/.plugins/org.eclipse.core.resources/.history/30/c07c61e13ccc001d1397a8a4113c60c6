@@ -1,0 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    <div class="footer">	
+		<h3>Copy right 2023. 인천일보아카데미</h3>
+	</div>
